@@ -66,7 +66,7 @@ const showModal = (total_view) => {
     modalBody.innerHTML = `
     
                   <p class="py-4">
-                    "${total_view}"
+                    "${news.category_id}"
                   </p>
       `;
   }
