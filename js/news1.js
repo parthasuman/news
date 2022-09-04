@@ -58,6 +58,28 @@ const displayModal = (news2) => {
   const modaltitle = document.getElementById("modal-body");
   modaltitle.innerText = news2.category_id;
 };
+// newLoadNews();
+// const showModal = async (_id) => {
+//   const url = `https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f11c2ab6a`;
+//   const res = await fetch(url);
+//   const data = await res.json();
+//   displayNews(data);
+// };
+// showModal();
+
+// const displayNews = (news5) => {
+//   console.log(news5);
+// };
+// {
+//   const modalBody = document.getElementById("modal-body");
+//   modalBody.textContent = "";
+//   modalBody.innerHTML = `
+
+//               <p class="py-4">
+//                 "${news.total_view}"
+//               </p>
+//   `;
+// }
 
 const showModal = (total_view) => {
   {
@@ -66,7 +88,7 @@ const showModal = (total_view) => {
     modalBody.innerHTML = `
     
                   <p class="py-4">
-                    "${news.category_id}"
+                    "${total_view}"
                   </p>
       `;
   }
